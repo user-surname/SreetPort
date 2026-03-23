@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+ion-app {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+body, ion-app {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+ion-content {
+  --background: var(--sp-white);
+}
+
+ion-page {
+  background: var(--sp-white);
+}
+
+/* Override Ionic tab bar */
+ion-tab-bar {
+  --background: var(--sp-white);
+  --border: none;
+  height: var(--sp-tab-bar-height);
+  border-top: 6px solid var(--sp-blue-light);
+}
+
+ion-tab-button {
+  --color: var(--sp-black);
+  --color-selected: var(--sp-black);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Scrollbar hidden on mobile feel */
+::-webkit-scrollbar { display: none; }

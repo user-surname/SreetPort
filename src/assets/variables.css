@@ -1,0 +1,25 @@
+:root {
+  /* StreetPORT Design Tokens */
+  --sp-blue-light: #8bd7ff;
+  --sp-blue-dark: #0037cc;
+  --sp-blue-bg: #8bd7ff;
+  --sp-gray-bg: #e5e5e5;
+  --sp-gray-text: #808080;
+  --sp-gray-value: #b1b1b1;
+  --sp-white: #ffffff;
+  --sp-black: #000000;
+
+  /* Typography */
+  --font-display: 'Geostar', sans-serif;
+  --font-ui: 'Geo', sans-serif;
+  --font-body: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+
+  /* Spacing */
+  --sp-page-padding: 33px;
+  --sp-card-radius: 20px;
+  --sp-input-radius: 8px;
+  --sp-btn-height: 76px;
+  --sp-input-height: 37px;
+  --sp-list-item-height: 84px;
+  --sp-tab-bar-height: 97px;
+}

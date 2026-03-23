@@ -1,0 +1,7 @@
+{
+  "name": "StreetPort",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
