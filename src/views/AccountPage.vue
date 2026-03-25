@@ -62,6 +62,7 @@
 <script setup lang="ts">
 import { IonPage, IonContent } from '@ionic/vue'
 import { reactive } from 'vue'
+import avatarImg from '@/assets/images/avatar.png'
 
 const user = reactive({
   name: 'Shrek Swampson',
@@ -71,7 +72,7 @@ const user = reactive({
   telegram: 'telgramAccount@telegram',
   phone: '+34 647 489 823',
   about: 'Me gusta mantenerme activo y aprovechar cualquier excusa para hacer deporte. No soy profesional, pero sí constante: disfruto entrenar, mejorar poco a poco y, sobre todo, compartir el deporte con otras personas. Busco gente con ganas de moverse, pasarlo bien y crear una rutina deportiva sin que se convierta en una obligación.',
-  avatar: 'https://www.figma.com/api/mcp/asset/c82423f2-eb1f-4d96-ac29-cca2fb9274a5',
+  avatar: avatarImg,
 })
 
 function editField(field: string) {

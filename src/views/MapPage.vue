@@ -30,12 +30,9 @@
     <!-- Map container -->
     <div ref="mapRef" class="map-container"></div>
 
-    <!-- FAB: Set location -->
-    <button class="fab-set" @click="setGameLocation">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-        <circle cx="15" cy="15" r="13" stroke="#333" stroke-width="2" fill="white"/>
-        <path d="M15 7C11.1 7 8 10.1 8 14C8 19.5 15 25 15 25C15 25 22 19.5 22 14C22 10.1 18.9 7 15 7ZM15 17C13.3 17 12 15.7 12 14C12 12.3 13.3 11 15 11C16.7 11 18 12.3 18 14C18 15.7 16.7 17 15 17Z" fill="#333"/>
-      </svg>
+    <!-- FAB: Geolocation -->
+    <button class="fab-set" @click="geoLocation">
+      <img :src="geolocationImg" alt="" style="width:48px;height:48px;object-fit:contain;" />
     </button>
   </ion-page>
 </template>
@@ -47,6 +44,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { Loader } from '@googlemaps/js-api-loader'
 import PlayInfoWindow from '@/components/PlayInfoWindow.vue'
+import geolocationImg from '@/assets/images/geolocation.png'
+
 
 const router = useRouter()
 const mapRef = ref<HTMLElement | null>(null)
@@ -198,7 +197,7 @@ onUnmounted(() => {
   map = null
 })
 
-function setGameLocation() {
+function geoLocation() {
   if (!map) return
   map.panTo({ lat: 40.416, lng: -3.703 })
   map.setZoom(16)

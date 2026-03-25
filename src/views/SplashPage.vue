@@ -2,7 +2,7 @@
   <ion-page class="splash-page">
     <div class="splash-content">
       <div class="logo-wrap">
-        <img src="https://www.figma.com/api/mcp/asset/03e1ec23-e217-4542-a558-81e02d805680" alt="StreetPORT mascot" class="logo-img" />
+        <img :src="birdImg" alt="StreetPORT mascot" class="logo-img" />
       </div>
       <h1 class="splash-title">
         <span>Wellcome to</span>
@@ -17,6 +17,8 @@
 import { IonPage } from '@ionic/vue'
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import birdImg from '@/assets/images/bird.png'
+
 
 const router = useRouter()
 onMounted(() => {

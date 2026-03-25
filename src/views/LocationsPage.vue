@@ -38,15 +38,23 @@
 import { IonPage, IonContent } from '@ionic/vue'
 import { useRouter } from 'vue-router'
 import ListItem from '@/components/ListItem.vue'
+import pingpongImg from '@/assets/images/pingpong.png'
+import footballImg from '@/assets/images/football.png'
+import basquetballImg from '@/assets/images/basquetball.png'
+import sportImg from '@/assets/images/sport.jpg'
+
 
 const router = useRouter()
 
-const mockAvatar = 'https://www.figma.com/api/mcp/asset/c82423f2-eb1f-4d96-ac29-cca2fb9274a5'
+const pingpongAvatar = pingpongImg
+const footballAvatar = footballImg
+const basketballAvatar = basquetballImg
+const mockAvatar = sportImg
 
 const currentGames = [
-  { id: '1', name: 'Ping Pong GoPlay Josh', type: 'Ping Pong', creator: 'Josh', avatar: mockAvatar },
-  { id: '2', name: 'Basketball 3v3', type: 'Basketball', creator: 'Maria', avatar: mockAvatar },
-  { id: '3', name: 'Football Pickup', type: 'Football', creator: 'Carlos', avatar: mockAvatar },
+  { id: '1', name: 'Ping Pong GoPlay Josh', type: 'Ping Pong', creator: 'Josh', avatar: pingpongAvatar },
+  { id: '2', name: 'Basketball 3v3', type: 'Basketball', creator: 'Maria', avatar: basketballAvatar },
+  { id: '3', name: 'Football Pickup', type: 'Football', creator: 'Carlos', avatar: footballAvatar },
 ]
 
 const rangeGames = [

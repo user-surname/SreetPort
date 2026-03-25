@@ -2,7 +2,7 @@
   <ion-page class="auth-page">
     <div class="auth-content">
       <div class="logo-wrap">
-        <img src="https://www.figma.com/api/mcp/asset/d10df550-b94a-49ae-9dcb-1258c2ce90ec" alt="StreetPORT" class="logo-img" />
+        <img :src="birdImg" alt="StreetPORT" class="logo-img" />
       </div>
 
       <div class="btn-group">
@@ -16,6 +16,8 @@
 <script setup lang="ts">
 import { IonPage } from '@ionic/vue'
 import { useRouter } from 'vue-router'
+import birdImg from '@/assets/images/bird.png'
+
 const router = useRouter()
 </script>
 
